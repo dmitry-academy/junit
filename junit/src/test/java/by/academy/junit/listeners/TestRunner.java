@@ -13,6 +13,7 @@ public class TestRunner extends BlockJUnit4ClassRunner {
 		ourListener = new OurListener();
 	}
 
+	@Override
 	public void run(final RunNotifier notifier) {
 		notifier.addListener(ourListener);
 		super.run(notifier);

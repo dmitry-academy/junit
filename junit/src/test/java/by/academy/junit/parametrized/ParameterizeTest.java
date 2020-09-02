@@ -11,6 +11,7 @@ import by.academy.junit.Calculator;
 
 @RunWith(value = Parameterized.class)
 public class ParameterizeTest extends Assert {
+	
 	private int valueA;
 	private int valueB;
 	private int expected;
@@ -23,11 +24,20 @@ public class ParameterizeTest extends Assert {
 
 	@Parameterized.Parameters(name = "{index}:sumOf({0}+{1})={2}")
 	public static Iterable<Object[]> dataForTest() {
-		return Arrays.asList(new Object[][] { { 1, 1, 2 }, { 2, 6, 8 }, { 18, 2, 20 }, { 13, 15, 28 }, { 1, 5, 6 } });
+		return Arrays.asList(
+				new Object[][] { 
+									{ 1, 1, 2 }, 
+									{ 2, 6, 8 }, 
+									{ 18, 2, 20 }, 
+									{ 13, 15, 28 }, 
+									{ 1, 5, 6 } 
+									}
+				);
 	}
 
 	@Test
 	public void paramTest() {
 		assertEquals(expected, new Calculator().getSum(valueA, valueB));
 	}
+	
 }

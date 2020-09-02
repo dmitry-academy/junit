@@ -23,8 +23,7 @@ public class FuncMath {
 		return result;
 	}
 
-	public long plus(int num1, int num2) {
-		calls++;
+	public static long plus(int num1, int num2) {
 		return num1 + num2;
 	}
 }

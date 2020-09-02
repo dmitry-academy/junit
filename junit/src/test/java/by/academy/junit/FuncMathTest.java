@@ -57,7 +57,7 @@ public class FuncMathTest extends Assert {
 	}
 
 	@Ignore
-	@Test
+	@Test(timeout = 1000 * 60 * 60 * 24)
 	public void todo() {
 		assertTrue(math.plus(1, 1) == 3);
 	}

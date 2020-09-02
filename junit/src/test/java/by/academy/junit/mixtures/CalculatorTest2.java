@@ -10,7 +10,7 @@ import org.junit.Test;
 
 import by.academy.junit.Calculator;
 
-public class CalculatorTest extends Assert {
+public class CalculatorTest2 extends Assert {
 
 	private Calculator calculator;
 
