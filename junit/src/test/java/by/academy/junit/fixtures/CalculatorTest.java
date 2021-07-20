@@ -1,4 +1,4 @@
-package by.academy.junit.mixtures;
+package by.academy.junit.fixtures;
 
 import org.junit.After;
 import org.junit.AfterClass;

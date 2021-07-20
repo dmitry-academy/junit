@@ -15,7 +15,7 @@ import org.junit.rules.Timeout;
 import com.google.gwt.util.tools.shared.StringUtils;
 
 public class JUnitOtherTest {
-
+//check
 	@Rule
 	public final TemporaryFolder folder = TemporaryFolder.builder().assureDeletion().build();
 
@@ -30,6 +30,13 @@ public class JUnitOtherTest {
 	public void anotherInfinity() {
 		while (true)
 			;
+	}
+
+	@Test(timeout = 2000)
+	@Ignore
+	public void test() throws IOException {
+		for (;;) {
+		}
 	}
 
 	@Test
