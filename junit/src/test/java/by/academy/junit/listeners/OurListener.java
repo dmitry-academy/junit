@@ -10,7 +10,7 @@ public class OurListener extends RunListener {
 	// Called before any tests have been run.
 	@Override
 	public void testRunStarted(Description description) throws java.lang.Exception {
-		System.out.println("Test cases to execute : " + description.testCount());
+		System.out.println("Test cases to execute : " + description.getDisplayName());
 	}
 
 	// Called when all tests have finished
@@ -35,7 +35,7 @@ public class OurListener extends RunListener {
 	// Called when an atomic test fails.
 	@Override
 	public void testFailure(Failure failure) throws java.lang.Exception {
-		System.out.println("Execution Failure : " + failure.getException());
+		System.out.println("Execution Failure : " + failure.getTrace());
 	}
 
 	// Called when a test will not be run, generally because a test method is

@@ -15,7 +15,7 @@ public class Test {
 		}
 
 		@BeforeClass
-		public void init() {
+		public static void init() {
 			System.out.println("SubTestWithRunner init()");
 		}
 	}

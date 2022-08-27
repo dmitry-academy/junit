@@ -7,15 +7,15 @@
 	<!-- Версия pom файла -->
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>by.academy</groupId>
-	<artifactId>by.academy.junit</artifactId>
+	<artifactId>junit</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<!-- Не обязательная информация о проекте: -->
-	
+
 	<name>junit</name>
 	<description>Junit Project</description>
 	<packaging>jar</packaging>
 	<!-- Зависимости -->
-	
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>

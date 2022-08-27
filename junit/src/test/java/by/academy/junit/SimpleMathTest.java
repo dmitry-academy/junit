@@ -24,7 +24,6 @@ public class SimpleMathTest extends Assert {
 	}
 
 	@Test(timeout = 1)
-	@Ignore
 	public void testTimeout() {
 		int i = 0;
 		while (i < 100) {

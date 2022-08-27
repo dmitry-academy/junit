@@ -22,10 +22,16 @@ public class ParameterizeTest extends Assert {
 		this.expected = expected;
 	}
 
-	@Parameterized.Parameters(name = "{index}:sumOf({0}+{1})={2}")
-	public static Iterable<Object[]> dataForTest() {
+	@Parameterized.Parameters(name="{index}: sum {0} and {1} = {2}")
+	public static Iterable<Integer[]> dataForTest() {
 		return Arrays.asList(
-				new Object[][] { { 1, 1, 3 }, { 1, 1, 2 }, { 2, 6, 8 }, { 18, 2, 20 }, { 13, 15, 28 }, { 1, 5, 6 } });
+				new Integer[][] { 
+					{ 1, 2, 3 }, 
+					{ 1, 1, 2 }, 
+					{ 2, 6, 8 }, 
+					{ 18, 2, 20 }, 
+					{ 13, 15, 28 }, 
+					{ 1, 5, 6 } });
 	}
 
 	@Test
